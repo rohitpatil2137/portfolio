@@ -11,84 +11,95 @@ import type {
 // ─── PERSONAL INFO ──────────────────────────────────────────
 export const personalInfo: PersonalInfo = {
   name: 'Rohit Raut',
-  title: 'DevOps Engineer',
-  tagline: 'Building reliable cloud infrastructure and automating everything in between.',
+  title: 'Azure DevOps Engineer | Cloud Engineer',
+  tagline: 'Designing, automating, and managing cloud-native infrastructure on Microsoft Azure with 4+ years of expertise in CI/CD, Kubernetes, Terraform, and cost optimization.',
   location: 'Pune, India',
-  email: 'rohitpatil2137@gmail.com',
-  resumeUrl: null, // Drop a resume.pdf in public/ and set this to '/resume.pdf'
+  email: 'rohitraut002137@gmail.com',
+  resumeUrl: '/resume.pdf',
 };
 
 // ─── ABOUT ──────────────────────────────────────────────────
-export const aboutText = `DevOps Engineer with ~3 years of hands-on experience in cloud infrastructure, CI/CD automation, and full-stack development. Proficient across Azure, AWS, and GCP ecosystems with expertise in container orchestration, infrastructure as code, and building developer tools. Passionate about streamlining deployments, reducing toil, and crafting solutions that scale.`;
+export const aboutText = `Azure DevOps Engineer with 4+ years of experience in designing, automating, and managing cloud-native infrastructure on Microsoft Azure. Strong expertise in CI/CD pipelines, Kubernetes (AKS), Terraform, Docker, and Helm with a proven record of improving deployment speed, reliability, and cost optimization. Passionate about Platform Engineering, GitOps, and building self-service developer platforms that enable teams to ship faster.`;
+
+// ─── EDUCATION ──────────────────────────────────────────────
+export const education = {
+  degree: 'Master of Computer Applications (MCA)',
+  institution: 'P.E.S Modern College, Pune',
+  period: '2020 – 2022',
+};
 
 // ─── SKILLS ─────────────────────────────────────────────────
 export const skills: SkillCategory[] = [
   {
-    category: 'Cloud Platforms',
+    category: 'Cloud & Azure',
     icon: 'Cloud',
-    items: ['Azure', 'AWS', 'GCP'],
+    items: ['Azure AKS', 'App Service', 'Logic Apps', 'Key Vault', 'Azure Storage', 'Azure SQL', 'PostgreSQL', 'VMs', 'Front Door', 'Azure AD'],
   },
   {
-    category: 'DevOps & IaC',
-    icon: 'Settings',
-    items: ['Docker', 'Kubernetes', 'Terraform', 'CI/CD (YAML)', 'Linux', 'Git'],
+    category: 'DevOps & CI/CD',
+    icon: 'GitBranch',
+    items: ['Azure DevOps', 'Jenkins', 'TeamCity', 'Octopus Deploy', 'YAML Pipelines', 'GitOps', 'ArgoCD'],
   },
   {
-    category: 'Frontend',
-    icon: 'Monitor',
-    items: ['React', 'TypeScript', 'Tailwind CSS', 'HTML/CSS'],
+    category: 'IaC & Containers',
+    icon: 'Container',
+    items: ['Terraform', 'Docker', 'Kubernetes', 'Helm', 'Ansible', 'ARM Templates'],
   },
   {
-    category: 'Backend',
-    icon: 'Server',
-    items: ['Node.js', 'Express', 'Java (Spring Boot)', 'PHP', 'Python'],
+    category: 'Monitoring & Observability',
+    icon: 'Activity',
+    items: ['Azure Monitor', 'Application Insights', 'Grafana', 'Promtail', 'Log Analytics', 'OpenTelemetry'],
   },
   {
-    category: 'Databases & Tools',
-    icon: 'Database',
-    items: ['PostgreSQL', 'Supabase', 'MySQL', 'Active Directory'],
+    category: 'Scripting & Automation',
+    icon: 'Terminal',
+    items: ['Bash', 'PowerShell', 'YAML', 'Python', 'Shell Scripting'],
   },
+  {
+    category: 'VCS & Collaboration',
+    icon: 'GitMerge',
+    items: ['GitHub', 'Azure Repos', 'Git', 'Pull Request Workflows', 'Branch Policies'],
+  },
+];
+
+// ─── TECH MARQUEE — scrolling tech logos ────────────────────
+export const techMarqueeItems = [
+  'Azure', 'Kubernetes', 'Docker', 'Terraform', 'Helm', 'Jenkins',
+  'Azure DevOps', 'Grafana', 'Linux', 'Ansible', 'ArgoCD', 'GitOps',
+  'AKS', 'CI/CD', 'PowerShell', 'Bash', 'PostgreSQL', 'Python',
+  'Prometheus', 'Azure Monitor', 'Key Vault', 'Front Door',
 ];
 
 // ─── EXPERIENCE ─────────────────────────────────────────────
 export const experiences: Experience[] = [
   {
-    role: 'DevOps Engineer',
-    company: 'Eberl Claims Solutions',
-    period: '2024 - Present',
-    description:
-      'Managing Azure cloud infrastructure, CI/CD pipelines, and Kubernetes clusters. Driving infrastructure automation with Terraform and improving deployment reliability.',
-    highlights: [
-      'Azure DevOps YAML Pipelines',
-      'Kubernetes & AKS Management',
-      'Terraform Infrastructure as Code',
-      'Monitoring & Incident Response',
-    ],
-  },
-  {
     role: 'Azure DevOps Engineer',
-    company: 'Go Digital Technology Consulting LLP',
-    period: '2023 - 2024',
+    company: 'Go Digital Technology Consultancy',
+    period: 'Oct 2024 – Present',
     description:
-      'Designed and maintained Azure cloud solutions, automated CI/CD workflows, and provisioned resources using Terraform on hybrid cloud environments.',
+      'Designing and optimizing CI/CD pipelines using Azure DevOps for multi-environment deployments. Automating database restoration workflows, managing AKS clusters with Helm, and provisioning Azure infrastructure using Terraform.',
     highlights: [
-      'CI/CD Pipeline Automation',
-      'Azure Resource Provisioning',
-      'Hybrid Cloud Infrastructure',
-      'Performance Monitoring & Alerting',
+      'Multi-environment CI/CD Pipelines',
+      'AKS & Helm Deployments',
+      'Terraform IaC Provisioning',
+      'MSSQL Automation (24h → 1h recovery)',
+      'Azure Monitoring Solutions',
+      'Platform Engineering',
     ],
   },
   {
     role: 'Cloud Support Engineer',
-    company: 'SysTools',
-    period: '2022 - 2023',
+    company: 'SysTools Software Pvt. Ltd.',
+    period: 'Nov 2021 – Sep 2024',
     description:
-      'Provided cloud support and administration, managed mailbox migrations, optimized cloud services for performance, and handled Active Directory administration.',
+      'Built and managed Azure infrastructure and CI/CD pipelines using Jenkins. Automated infrastructure tasks using Ansible and PowerShell. Led Active Directory and Exchange mailbox migration projects for enterprise clients.',
     highlights: [
-      'Cloud Migration Support',
-      'Active Directory Management',
-      'Troubleshooting & Root Cause Analysis',
-      'Service Optimization',
+      'Azure Infrastructure Management',
+      'Jenkins CI/CD Pipelines',
+      'Ansible & PowerShell Automation',
+      'Active Directory & Exchange Migration',
+      'Incident Response & Troubleshooting',
+      'Cloud Cost Optimization',
     ],
   },
 ];
@@ -96,50 +107,52 @@ export const experiences: Experience[] = [
 // ─── PROJECTS ───────────────────────────────────────────────
 export const projects: Project[] = [
   {
-    title: 'Job Hunter',
+    title: 'Azure Multi-Env CI/CD Pipeline',
     description:
-      'Full-stack PWA for tracking job applications across multiple profiles. Features AI-powered resume customization, Gmail integration for auto-detecting application updates, smart job discovery with relevance scoring, and AI mock interview prep.',
-    techStack: ['React', 'TypeScript', 'Node.js', 'Express', 'Supabase', 'Tailwind CSS', 'Groq AI'],
+      'Designed end-to-end Azure DevOps YAML pipelines for multi-environment deployments (Dev, QA, Staging, Prod) with automated approvals, variable groups, and rollback strategies. Reduced deployment failures by 40%.',
+    techStack: ['Azure DevOps', 'YAML', 'Terraform', 'AKS', 'Helm'],
+    githubUrl: null,
+    liveUrl: null,
+  },
+  {
+    title: 'MSSQL Automated Restoration',
+    description:
+      'Built an automated MSSQL database restoration pipeline that reduced recovery time from 24 hours to under 1 hour. Uses Azure DevOps triggers, PowerShell scripts, and Azure SQL managed instances.',
+    techStack: ['PowerShell', 'Azure DevOps', 'Azure SQL', 'Automation'],
+    githubUrl: null,
+    liveUrl: null,
+  },
+  {
+    title: 'Job Hunter — AI-Powered Job Tracker',
+    description:
+      'Full-stack PWA for tracking job applications with AI-powered resume customization, Gmail integration, smart job discovery with relevance scoring, and AI mock interview prep.',
+    techStack: ['React', 'TypeScript', 'Node.js', 'Supabase', 'Groq AI'],
     githubUrl: 'https://github.com/rohitpatil2137/job-hunter',
     liveUrl: 'https://job-hunter-client.vercel.app',
   },
   {
-    title: 'Bhaji-Katta',
+    title: 'Infrastructure Monitoring Stack',
     description:
-      'E-commerce platform for ordering fresh vegetables online with doorstep delivery. Built with a focus on user-friendly ordering experience.',
-    techStack: ['HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com/rohitpatil2137/Bhaji-katta',
-    liveUrl: null,
-  },
-  {
-    title: 'Credit Management System',
-    description:
-      'Web application for managing credit transactions and financial records with user authentication and reporting capabilities.',
-    techStack: ['PHP', 'MySQL', 'HTML/CSS'],
-    githubUrl: 'https://github.com/rohitpatil2137/CreditManagement',
-    liveUrl: null,
-  },
-  {
-    title: 'Spring Boot Microservices',
-    description:
-      'Collection of microservice projects built with Spring Boot demonstrating REST APIs, testing patterns, and Java backend architecture.',
-    techStack: ['Java', 'Spring Boot', 'REST API'],
-    githubUrl: 'https://github.com/rohitpatil2137/springBootHello',
+      'Set up comprehensive monitoring for Azure AKS workloads using Grafana, Promtail, and Azure Monitor with custom dashboards, alerting rules, and log aggregation for proactive incident management.',
+    techStack: ['Grafana', 'Promtail', 'Azure Monitor', 'Application Insights'],
+    githubUrl: null,
     liveUrl: null,
   },
 ];
 
 // ─── CERTIFICATIONS ─────────────────────────────────────────
 export const certifications: Certification[] = [
+  { name: 'AZ-104: Azure Administrator Associate', issuer: 'Microsoft', year: '2024' },
   { name: 'AZ-900: Azure Fundamentals', issuer: 'Microsoft', year: '2023' },
-  { name: 'Azure DevOps Engineer Expert', issuer: 'Microsoft', year: '2024' },
+  { name: 'Introduction to Kubernetes', issuer: 'Linux Foundation', year: '2023' },
+  { name: 'Introduction to Jenkins', issuer: 'Linux Foundation', year: '2023' },
 ];
 
 // ─── SOCIAL LINKS ───────────────────────────────────────────
 export const socialLinks: SocialLink[] = [
   { platform: 'GitHub', url: 'https://github.com/rohitpatil2137', icon: 'Github' },
   { platform: 'LinkedIn', url: 'https://linkedin.com/in/rohit-raut-cloud-devops', icon: 'Linkedin' },
-  { platform: 'Email', url: 'mailto:rohitpatil2137@gmail.com', icon: 'Mail' },
+  { platform: 'Email', url: 'mailto:rohitraut002137@gmail.com', icon: 'Mail' },
 ];
 
 // ─── NAVIGATION ─────────────────────────────────────────────

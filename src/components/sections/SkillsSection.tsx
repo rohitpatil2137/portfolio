@@ -1,10 +1,10 @@
-import { Cloud, Settings, Monitor, Server, Database, type LucideIcon } from 'lucide-react';
+import { Cloud, GitBranch, Container, Activity, Terminal, GitMerge, type LucideIcon } from 'lucide-react';
 import { SectionHeading } from '../ui/SectionHeading';
 import { ScrollReveal } from '../ui/ScrollReveal';
 import { SkillBadge } from '../ui/SkillBadge';
 import { skills } from '../../data/portfolio-data';
 
-const iconMap: Record<string, LucideIcon> = { Cloud, Settings, Monitor, Server, Database };
+const iconMap: Record<string, LucideIcon> = { Cloud, GitBranch, Container, Activity, Terminal, GitMerge };
 
 export function SkillsSection() {
   return (
